@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+#ujlista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#ujlista div {
+  border: solid 1px red;
+  flex: 0 0 calc(33% - 5px);
+  padding: 5px;
+}
+
+.szin{
+    background-color: cyan;
+}
+
+@media screen and (max-width: 400px) {
+  #ujlista div {
+    flex: 0 0 calc(50% - 5px);
+  }
+}
